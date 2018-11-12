@@ -1,0 +1,44 @@
+<html>
+<head>
+<Script Language="VB Script">
+Sub Username
+n=Document.fr.t1.value
+p=Document.fr.t2.value
+if (n="Aditya" & p="fullmarks") then
+
+Set a= CreateObject("internetexplorer.Application")
+a.Navigate "files/Desktop.html"
+
+else
+MsgBox "You have entered wrong Username or Password"
+end if
+end sub
+</Script>
+</head>
+
+<body background="files/LogonScreen.jpg"><font color=white align=right>
+<center>
+<object width="370" height="370" loop="false">
+<param name="SRC" value="files/w7.swf">
+<embed src="files/w7.swf" width="370" height="370" loop="false">
+</embed>
+</object><br><br><br>
+<font color=white>
+
+<Form name="fr" action="files/Desktop.html" ctype="post">
+Username: <Input Type="text" name="t1"><br><br>
+Password: <Input Type="password" name="t2"><br><br>
+<Input Type="Submit" value="Login" onSubmit="Username">
+<Input Type="button" value="Hint" onClick="alert('Username:Aditya & Password:fullmarks')">
+</Form>
+
+<br>
+<br>
+<br><br>
+<br>
+<br><br>
+<br>
+<br>
+Adit's Corporation ©
+</body>
+</html>
